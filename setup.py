@@ -24,12 +24,12 @@ def read(fname):
 setup(
     name = "testbywyf", #包的名字
     packages = ["testbywyf"], #包含的包，可以多个，这是一个列表
-    version = "0.1", #当前包的版本，这个按你自己需要的版本控制方式来
+    version = "0.1.0", #当前包的版本，这个按你自己需要的版本控制方式来
 
     keywords = "test python package", #关于当前包的一些关键字，方便PyPI进行分类。
     author = "Weber Juche", # 包的作者
     author_email = "weber.juche@gmail.com", #作者的邮件地址
-    url = "http://pwd0.com/",  #这个包的项目地址
+    url = "https://github.com/Weber-JC/testbywyf",  #这个包的项目地址
     license = "MIT", #授权方式,
 
     #zip_safe=True,
@@ -45,27 +45,10 @@ setup(
         'Operating System :: OS Independent',
     ],
     include_package_data=True,    
-)
- 
-## 把上面的变量填入了一个setup()中即可。
 
-# from setuptools import setup, find_packages
-
-# setup(
-#     name = "test",
-#     packages = ['test'], # this must be the same as the name above
-#     version = "0.1",    
-#     zip_safe = False,
-
-#     description = "test",
-#     long_description = "Public Funcs",
-#     author = "Weber Juche",
-#     author_email = "weber.juche@gmail.com",
-
-#     license = "MIT",
-#     keywords = ["test", "egg"],
-#     classifiers = [],
-#     platforms = "Independant",
-#     url = "http://pwd0.com/",
-    
-# )
+    # install_requires=[
+    #     "requests",
+    #     "bcrypt",
+    # ], # 所依赖的PyPi包
+    # dependency_links=['http://github.com/user/repo/tarball/master#egg=package-1.0'] # 非PyPi包
+) 
